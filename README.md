@@ -53,6 +53,29 @@ A modern, feature-rich document viewer for Microsoft Word (.docx) and OpenDocume
 2. Open any `.docx` or `.odt` file
 3. The document will automatically open in the enhanced viewer
 
+## 🏠 Local Fork Workflow
+
+This fork is set up to build local VSIX packages under the `arda` publisher.
+
+### Build
+```bash
+npm ci
+npm run compile
+npm run package
+```
+
+The package command writes `docxreader-1.4.2.vsix` in the repository root.
+
+### Install In VS Code
+```bash
+code --install-extension ./docxreader-1.4.2.vsix --force
+```
+
+### Run In An Extension Development Host
+```bash
+code --extensionDevelopmentPath=. --new-window
+```
+
 ## ⚙️ Configuration
 
 Access settings via `Ctrl+Shift+P` → "Open Docx Reader Configuration" or go to File → Preferences → Settings and search for "Docx Reader".

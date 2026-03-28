@@ -1,0 +1,17 @@
+.vscode/
+.vscode-test/
+dist/
+scripts/
+src/
+*.vsix
+**/*.map
+**/*.ts
+**/tsconfig.json
+**/.eslintrc.json
+.gitignore
+.npmignore
+eslint.config.js
+example_docx/
+assets/icons/sample.gif
+out/test/
+vsc-extension-quickstart.md
